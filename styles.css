@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rock+Salt&display=swap');
+* {
+box-sizing: border-box;
+margin: 5;
+padding: 5;
+background-color: #fffff;
+}
+
+li, a{
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 10%;
+}
+
+nav {
+    background: #FB7E37;
+    height: 75px; 
+    width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 175px;
+    height: 45px;
+}
+
+.nav_links {
+    list-style: inline-block;
+    padding: 0px 20px
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #fffff;
+}
+
+button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    outline: none;  
+    transition: ease-out 0.3s;
+    border: 3px solid #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+button:hover { 
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:before {
+    transition: 0.5s all ease;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #FB7E37;
+}
+
+button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: .5;
+    color: #8A7FE5;
+    font-size: 44px;
+}
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    line-height: .5;
+    color: #8A7FE5;
+    font-size: 32px;
+}
+
+
+.text-container p{
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+    font-size: 22px;
+}
+
+.text-container{
+    position:absolute;
+    left: 13%;
+    top: 42%;
+    transform:translate(-13%, -42%)
+}
+
+button.text-container {
+    margin-left:10%
+}
